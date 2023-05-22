@@ -1,0 +1,17 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+
+body {
+    margin: 0;
+    background-color: $bg-color;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.primary {
+    color: $primary-color;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
