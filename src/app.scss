@@ -3,11 +3,24 @@
 body {
     margin: 0;
     background-color: $bg-color;
-    color: #FFFFFF;
+    color: $txt-color;
     font-family: 'Roboto', sans-serif;
 }
 
-.primary {
+.btn {
+    color: $important-txt-color;
+    background-color: $primary-color;
+    padding: 0.7rem;
+    border: none;
+    &:hover {
+        color: $primary-color;
+        background-color: $important-txt-color;
+    }
+}
+
+h1,
+h2,
+h3 {
     color: $primary-color;
 }
 
