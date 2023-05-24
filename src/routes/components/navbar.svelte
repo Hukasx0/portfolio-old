@@ -5,11 +5,13 @@
 <style lang="scss">
     .navbar {
         background-color: $second-bg-color;
-        color: #FFFFFF;
         display: flex;
         justify-content: space-between;
         a {
-            color: #FFFFFF;
+            color: $txt-color;
+            &:hover {
+                color: #FFFFFF;
+            }
         }
         ul {
             list-style-type: none;
@@ -17,17 +19,18 @@
         li {
             display: inline-block;
         }
-    }
-    .logo {
+        .logo {
         color: $logo-color;
+        }
     }
 </style>
 
 <nav class="navbar">
-    <span class="logo">logo</span>
+    <span class="logo">Hubert Kasperek</span>
     <ul>
-        <li><a href="#">projects</a></li>
-        <li><a href="#">skills</a></li>
-        <li><a href="#">strengths</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#strengths">strengths</a></li>
+        <li><a href="#contact">contact</a></li>
     </ul>
 </nav>
