@@ -9,7 +9,7 @@
     }
 </style>
 
-<div class="projects">
+<div class="projects" id="projects">
     <div class="row">
         <div class="project">
             <h3><a href="https://github.com/Hukasx0/rogger" target="_blank">Rogger</a></h3>

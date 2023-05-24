@@ -2,7 +2,7 @@
     
 </style>
 
-<div class="skills">
+<div class="skills" id="skills">
     <div class="skill">
         <h3>Frontend</h3>
     </div>

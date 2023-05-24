@@ -28,9 +28,9 @@
 <nav class="navbar">
     <span class="logo">Hubert Kasperek</span>
     <ul>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#skills">skills</a></li>
         <li><a href="#strengths">strengths</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
         <li><a href="#contact">contact</a></li>
     </ul>
 </nav>
