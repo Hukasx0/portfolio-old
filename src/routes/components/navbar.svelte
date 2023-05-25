@@ -1,5 +1,9 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+    import { fly } from 'svelte/transition';
 
+    let ready: Boolean = false;
+    onMount(() => ready = true);
 </script>
 
 <style lang="scss">
@@ -25,7 +29,8 @@
     }
 </style>
 
-<nav class="navbar">
+{#if ready}
+<nav class="navbar" transition:fly="{{ y: -400, duration: 500 }}">
     <span class="logo">Hubert Kasperek</span>
     <ul>
         <li><a href="#strengths">strengths</a></li>
@@ -34,3 +39,4 @@
         <li><a href="#contact">contact</a></li>
     </ul>
 </nav>
+{/if}

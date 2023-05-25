@@ -5,6 +5,12 @@
     import Strengths from "./components/strengths.svelte";
     import Contact from "./components/contact.svelte";
     import Footer from "./components/footer.svelte";
+
+    import { onMount } from "svelte";
+    import { fly, fade } from 'svelte/transition';
+
+    let ready: Boolean = false;
+    onMount(() => ready = true);
 </script>
 
 <style lang="scss">
@@ -13,32 +19,44 @@
     }
     main {
         display: flex;
+        height: 100%;
         .intro {
             width: 500px;
-            margin-left: 7%;
-            display: grid;
+            height: 600px;
+            margin-left: 14%;
+            display: flex;
+            flex-direction: column;
             .primary {
                 color: $primary-color;
-                margin-top: 120px;
+                margin-top: 35%;
                 width: 300px;
+                font-size: 2.8rem;
+            }
+            p {
+                font-size: 1.2rem;
             }
             span {
                 color: #FFFFFF;
             }
-            .btn {
-
+            .btn-container {
+                display: flex;
+                gap: 5%;
+                .btn {
+                    width: 45%;
+                }
             }
         }
     }
-
     .bg-text {
         color: #24283B;
         display: flex;
         flex-direction: column;
         font-size: 60px;
+        margin-top: 30px;
         span {
-            margin: 20px;
+            margin: 40px;
             margin-left: 240px;
+            font-size: 70px;
         }
     }
 </style>
@@ -47,24 +65,34 @@
 
 <main>
     <div class="intro">
-        <h1 class="primary">Hi, my name is Hubert</h1>
-        <p>
+        {#if ready}
+        <h1 class="primary" transition:fly="{{ x: -200, duration: 1000 }}">Hi, my name is Hubert</h1>
+        {/if}
+        {#if ready}
+        <p transition:fly="{{ x: -200, duration: 1500 }}">
             I am a young programmer with a passion for web development. I have skills in <span>Backend</span>, <span>Frontend</span> and <span>penetration testing</span> with a focus on web applications and networks - which makes me a one-man army in the field of web development
         </p>
-        <button class="btn">Contact me</button>
+        {/if}
+        <div class="btn-container">
+            {#if ready}
+            <button class="btn" transition:fly="{{ y: 200, duration: 500 }}">Contact me</button>
+            <button class="btn" transition:fly="{{ y: 200, duration: 1000 }}">Check out my projects</button>
+            {/if}
+        </div>
     </div>
     <div class="bg-text">
-        <span>&lt;Frontend /&gt;</span>
-        <span>Back.end()</span>
-        <span>$ Pentesting</span>
+        {#if ready}
+        <span transition:fade="{{ duration: 500 }}">&lt;Frontend /&gt;</span>
+        <span transition:fade="{{ duration: 1000 }}">Back.end()</span>
+        <span transition:fade="{{ duration: 1500 }}">$ Pentesting</span>
+        {/if}
     </div>
 </main>
 
-<h2>My strengths</h2>
 <Strengths />
 
 <h2>My skills</h2>
-<Skills />
+<Skills/>
 
 <h2>My projects</h2>
 <Projects />
