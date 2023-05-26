@@ -27,6 +27,9 @@
         .logo {
             color: $logo-color;
             margin-left: 2%;
+            &:hover {
+                color: $logo-color;
+            }
         }
         .contact {
             margin-right: 2%;
@@ -36,7 +39,7 @@
 
 {#if ready}
 <nav class="navbar" transition:fly="{{ y: -400, duration: 500 }}">
-    <span class="logo">Hubert Kasperek</span>
+    <a href="/" class="logo">Hubert Kasperek</a>
     <ul>
         <li><a href="#strengths">strengths</a></li>
         <li><a href="#skills">skills</a></li>

@@ -26,13 +26,12 @@
     }
 </style>
 
-<div class="skills">
-    <div
-    use:inview={{ unobserveOnEnter: true, rootMargin: '50px' }}
-    on:inview_change={({ detail }) => {
-        isInView = detail.inView;
-    }}
-></div>
+<div class="skills"
+use:inview={{ unobserveOnEnter: true, rootMargin: '50px' }}
+on:inview_change={({ detail }) => {
+    isInView = detail.inView;
+}}
+>
 {#if isInView}
     <div class="skill">
         <h2 transition:fly="{{ x: -800, duration: 1500 }}">Frontend</h2>
