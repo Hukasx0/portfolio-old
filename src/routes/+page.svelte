@@ -59,6 +59,9 @@
             font-size: 70px;
         }
     }
+    .heading {
+        text-align: center;
+    }
 </style>
 
 <Navbar />
@@ -75,8 +78,8 @@
         {/if}
         <div class="btn-container">
             {#if ready}
-            <button class="btn" transition:fly="{{ y: 200, duration: 500 }}">Contact me</button>
-            <button class="btn" transition:fly="{{ y: 200, duration: 1000 }}">Check out my projects</button>
+            <a href="#contact" class="btn" transition:fly="{{ y: 200, duration: 500 }}">Contact me</a>
+            <a href="#projects" class="btn" transition:fly="{{ y: 200, duration: 1000 }}">Check out my projects</a>
             {/if}
         </div>
     </div>
@@ -89,15 +92,16 @@
     </div>
 </main>
 
+<h2 class="heading" id="strengths">My strengths</h2>
 <Strengths />
 
-<h2>My skills</h2>
+<h2 class="heading" id="skills">My skills</h2>
 <Skills/>
 
-<h2>My projects</h2>
+<h2 class="heading" id="projects">My projects</h2>
 <Projects />
 
-<h2>Contact me</h2>
+<h2 class="heading" id="contact">Contact me</h2>
 <Contact />
 
 <Footer />

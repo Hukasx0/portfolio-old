@@ -11,6 +11,7 @@
         background-color: $second-bg-color;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         a {
             color: $txt-color;
             &:hover {
@@ -24,7 +25,11 @@
             display: inline-block;
         }
         .logo {
-        color: $logo-color;
+            color: $logo-color;
+            margin-left: 2%;
+        }
+        .contact {
+            margin-right: 2%;
         }
     }
 </style>
@@ -36,7 +41,7 @@
         <li><a href="#strengths">strengths</a></li>
         <li><a href="#skills">skills</a></li>
         <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
     </ul>
+    <li class="contact"><a href="#contact"><button class="btn-rnd">Contact me</button></a></li>
 </nav>
 {/if}

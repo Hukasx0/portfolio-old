@@ -3,6 +3,7 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -23,8 +24,24 @@ h2 {
     border: 1px solid $primary-color;
     padding: 0.7rem;
     border: none;
+    cursor: pointer;
+    text-align: center;
     &:hover {
         background-color: $bg-color;
+        border: 1px solid $primary-color;
+    }
+}
+
+.btn-rnd {
+    color: $important-txt-color;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    padding: 0.7rem;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $second-bg-color;
         border: 1px solid $primary-color;
     }
 }
@@ -38,4 +55,9 @@ h3 {
 a {
     color: $link-color;
     text-decoration: none;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
 }
