@@ -14,7 +14,7 @@
             flex-direction: column;
         }
         @media (min-width: 742px) { 
-            height: 100%;
+            height: 50%;
         }
         .item {
             display: flex;

@@ -7,23 +7,27 @@
 
 <style lang="scss">
     .skills {
-        width: 70%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-left: 25%;
         .skill {
             display: flex;
-            @media (max-width: 820px) {
-                flex-direction: column;
+            align-items: center;
+            @media (min-width: 1052px) {
+                 gap: 15%;
+                 width: 65%;
+                 margin-left: 35%;
             }
-            width: 100%;
+            @media (max-width: 1051px) {
+                flex-direction: column;
+                justify-content: center;
+            }
             h2 {
                 font-size: 2rem;
             }
             .img-container {
                 @media (min-width: 821px) {
-                    margin-left: 20%;
+                  //  margin-left: 20%;
                 }
             }
         }

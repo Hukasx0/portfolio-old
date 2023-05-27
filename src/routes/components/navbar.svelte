@@ -22,6 +22,7 @@
         }
         ul {
             list-style-type: none;
+            word-spacing: 1.5rem;
         }
         li {
             display: inline-block;
