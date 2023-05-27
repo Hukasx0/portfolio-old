@@ -61,3 +61,25 @@ a {
     height: 100%;
     width: 100%;
 }
+
+.gradient-logo {
+    background: linear-gradient(to right, $primary-color, $important-txt-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 5s linear;
+    background-position: 0% 50%;
+    background-size: 200% auto;
+    animation: gradient-animation 5s linear infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}

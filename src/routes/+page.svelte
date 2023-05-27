@@ -19,11 +19,13 @@
     }
     main {
         display: flex;
+        align-items: center;
         height: 100%;
         .intro {
-            width: 500px;
-            height: 600px;
-            margin-left: 14%;
+            width: 80%;
+            max-width: 500px;
+            height: 100%;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             .primary {
@@ -62,6 +64,26 @@
     .heading {
         text-align: center;
     }
+
+    @media (min-width: 1024px) {
+        main .intro {
+            width: 60%;
+            max-width: 800px;
+            margin: 0 auto;
+            .primary {
+                font-size: 3.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 1480px) {
+        .bg-text {
+            display: none;
+        }
+    }
 </style>
 
 <Navbar />
@@ -69,7 +91,7 @@
 <main>
     <div class="intro">
         {#if ready}
-        <h1 class="primary" transition:fly="{{ x: -200, duration: 1000 }}">Hi, my name is Hubert</h1>
+        <h1 class="primary" transition:fly="{{ x: -200, duration: 1000 }}">Hi, my name is <span class="gradient-logo">Hubert</span></h1>
         {/if}
         {#if ready}
         <p transition:fly="{{ x: -200, duration: 1500 }}">

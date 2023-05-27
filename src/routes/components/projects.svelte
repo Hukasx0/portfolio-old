@@ -6,6 +6,7 @@
 </script>
 
 <style lang="scss">
+    @media (min-width: 1145px) {
     .projects {
         height: 100%;
         margin-left: 3%;
@@ -18,6 +19,16 @@
                     width: 100%;
                     height: 70%;
                 }
+            }
+        }
+    }
+}
+    .projects {
+        .row .project {
+            width: 100%;
+            img {
+                height: 70%;
+                width: 100%;
             }
         }
     }

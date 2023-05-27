@@ -10,11 +10,19 @@
         display: flex;
         align-items: center;
         margin-left: 15%;
-        height: 100%;
+        @media (max-width: 778px) {
+            flex-direction: column;
+        }
+        @media (min-width: 742px) { 
+            height: 100%;
+        }
         .item {
             display: flex;
+            @media (max-width: 778px) {
+                height: 30%;
+                
+            }
             flex-direction: column;
-            width: 20%;
             margin-right: 10%;
             img {
                 align-self: center;
@@ -27,6 +35,9 @@
             }
             p {
                 font-size: 1.3rem;
+                @media (max-width: 778px) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }

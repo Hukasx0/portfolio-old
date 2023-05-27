@@ -1,6 +1,8 @@
 <style lang="scss">
     footer {
         background-color: $second-bg-color;
+        width: 100%;
+        height: 110px;
     }
 </style>
 

@@ -7,7 +7,6 @@
 
 <style lang="scss">
     .skills {
-        height: 100%;
         width: 70%;
         display: flex;
         flex-direction: column;
@@ -15,12 +14,17 @@
         margin-left: 25%;
         .skill {
             display: flex;
+            @media (max-width: 820px) {
+                flex-direction: column;
+            }
             width: 100%;
             h2 {
                 font-size: 2rem;
             }
             .img-container {
-                margin-left: 20%;
+                @media (min-width: 821px) {
+                    margin-left: 20%;
+                }
             }
         }
     }
