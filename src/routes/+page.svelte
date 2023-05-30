@@ -3,7 +3,6 @@
     import Projects from "./components/projects.svelte";
     import Skills from "./components/skills.svelte";
     import Strengths from "./components/strengths.svelte";
-    import Contact from "./components/contact.svelte";
     import Footer from "./components/footer.svelte";
 
     import { onMount } from "svelte";
@@ -28,9 +27,9 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             .primary {
                 color: $primary-color;
-                margin-top: 35%;
                 width: 300px;
                 font-size: 2.8rem;
             }
@@ -100,7 +99,7 @@
         {/if}
         <div class="btn-container">
             {#if ready}
-            <a href="#contact" class="btn" transition:fly="{{ y: 200, duration: 500 }}">Contact me</a>
+            <a href="mailto:hubertkasp13@gmail.com" class="btn" transition:fly="{{ y: 200, duration: 500 }}">Contact me</a>
             <a href="#projects" class="btn" transition:fly="{{ y: 200, duration: 1000 }}">Check out my projects</a>
             {/if}
         </div>
@@ -122,8 +121,5 @@
 
 <h2 class="heading" id="projects">My projects</h2>
 <Projects />
-
-<h2 class="heading" id="contact">Contact me</h2>
-<Contact />
 
 <Footer />

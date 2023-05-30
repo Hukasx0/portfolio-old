@@ -25,7 +25,16 @@
 }
     .projects {
         .row .project {
+            padding: 10px;
             width: 100%;
+            height: 100%;
+            @media (min-width: 1145px) {
+                border: 3px solid $second-bg-color;
+                border-radius: 5px;
+            }
+            @media (max-width: 1145px) {
+                margin-bottom: 10%;   
+            }
             img {
                 height: 70%;
                 width: 100%;
