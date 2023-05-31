@@ -26,7 +26,7 @@
     .projects {
         .row .project {
             padding: 10px;
-            width: 100%;
+            width: 95%;
             height: 100%;
             @media (min-width: 1145px) {
                 border: 3px solid $second-bg-color;
