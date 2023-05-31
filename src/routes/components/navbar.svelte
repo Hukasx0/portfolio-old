@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { fly } from 'svelte/transition';
+    import Hamburger from "./hamburger.svelte";
 
     let ready: Boolean = false;
     onMount(() => ready = true);
@@ -93,9 +94,7 @@
         <li><a href="#projects">projects</a></li>
     </ul>
     <li class="contact"><a href="mailto:hubertkasp13@gmail.com"><button class="btn-rnd">Contact me</button></a></li>
-    <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" style="fill: rgba(42, 195, 222, 1);"></path>
-      </svg>
+    <Hamburger />
 </nav>
 {/if}
   
