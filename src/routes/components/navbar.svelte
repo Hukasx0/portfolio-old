@@ -89,9 +89,9 @@
 <nav class="navbar" transition:fly="{{ y: -400, duration: 500 }}">
     <a href="/" class="logo gradient-logo">Hubert Kasperek</a>
     <ul class="regNav">
-        <li><a href="#strengths">strengths</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#projects">projects</a></li>
+        <li><a href="#strengths">Strengths</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
     </ul>
     <li class="contact"><a href="mailto:hubertkasp13@gmail.com"><button class="btn-rnd">Contact me</button></a></li>
     <Hamburger />
