@@ -86,32 +86,20 @@
 </style>
 
 <Navbar />
-
-<main>
+{#if ready}
+<main loading="lazy"  transition:fly="{{ x: -100, duration: 500 }}" style="background:url(./background.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay; height: 100vh;">
     <div class="intro">
-        {#if ready}
         <h1 class="primary" transition:fly="{{ x: -200, duration: 1000 }}">Hi, my name is <span class="gradient-logo">Hubert</span></h1>
-        {/if}
-        {#if ready}
         <p transition:fly="{{ x: -200, duration: 1500 }}">
             I am a young programmer with a passion for web development. I have skills in <span>Backend</span>, <span>Frontend</span> and <span>penetration testing</span> with a focus on web applications and networks - which makes me a one-man army in the field of web development
         </p>
-        {/if}
         <div class="btn-container">
-            {#if ready}
             <a href="mailto:hubertkasp13@gmail.com" class="btn" transition:fly="{{ y: 200, duration: 500 }}">Contact me</a>
             <a href="#projects" class="btn" transition:fly="{{ y: 200, duration: 1000 }}">Check out my projects</a>
-            {/if}
         </div>
     </div>
-    <div class="bg-text">
-        {#if ready}
-        <span transition:fade="{{ duration: 500 }}">&lt;Frontend /&gt;</span>
-        <span transition:fade="{{ duration: 1000 }}">Back.end()</span>
-        <span transition:fade="{{ duration: 1500 }}">$ Pentesting</span>
-        {/if}
-    </div>
 </main>
+{/if}
 
 <h2 class="heading" id="strengths">My strengths</h2>
 <Strengths />
