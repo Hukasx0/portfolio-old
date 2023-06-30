@@ -33,11 +33,11 @@ const App: Component = () => {
       {tab() === 3 && <Skills />}
       </div>
       <ul class="steps mt-auto">
-        <li class={`step ${tab() >= 0 ? 'step-primary' : ''}`}>Home</li>
-        <li class={`step ${tab() >= 1 ? 'step-primary' : ''}`}>Strengths</li>
-        <li class={`step ${tab() >= 2 ? 'step-primary' : ''}`}>Projects</li>
-        <li class={`step ${tab() >= 3 ? 'step-primary' : ''}`}>Skills</li>
-        <li class={`step ${tab() >= 4 ? 'step-primary' : ''}`}>Contact</li>
+        <li style={'cursor: pointer;'} class={`step ${tab() >= 0 ? 'step-primary' : ''}`} onClick={() => tabClick(0)}></li>
+        <li style={'cursor: pointer;'} class={`step ${tab() >= 1 ? 'step-primary' : ''}`} onClick={() => tabClick(1)}></li>
+        <li style={'cursor: pointer;'} class={`step ${tab() >= 2 ? 'step-primary' : ''}`} onClick={() => tabClick(2)}></li>
+        <li style={'cursor: pointer;'} class={`step ${tab() >= 3 ? 'step-primary' : ''}`} onClick={() => tabClick(3)}></li>
+        <li style={'cursor: pointer;'} class={`step ${tab() >= 4 ? 'step-primary' : ''}`} onClick={() => tabClick(4)}></li>
       </ul>
       </div>
       <Footer />
