@@ -4,7 +4,6 @@ const Footer: Component = () => {
     return (
         <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
   <div class="grid grid-flow-col gap-4">
-    <a class="link link-hover">About me</a> 
     <a href="https://app.hackthebox.com/profile/696093" class="link link-hover">HackTheBox</a> 
     <a href="https://tryhackme.com/p/Hukasx0" class="link link-hover">TryHackMe</a> 
     <a href="https://leetcode.com/Hukasx0/" class="link link-hover">Leetcode</a>
