@@ -1,4 +1,5 @@
 import type { Component } from "solid-js";
+import aiCompanionImage from "../assets/ai-companion-img.png";
 import roggerImage from "../assets/rogger-img.png";
 import zsp2Image from "../assets/zsp2-wagrowiec-img.png";
 import homeMiddlemanImage from "../assets/home-middleman-img.png";
@@ -6,6 +7,25 @@ import homeMiddlemanImage from "../assets/home-middleman-img.png";
 const Projects: Component = () => {
     return (
         <div>
+          <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure><img src={aiCompanionImage} alt="" loading="lazy"/></figure>
+            <div class="card-body w-1/2">
+            <h2 class="card-title">ai companion</h2>
+              <div class="flex flex-row">
+                <div class="badge badge-neutral">Rust</div>
+                <div class="badge badge-primary">Actix</div>
+                <div class="badge badge-secondary">React</div>
+                <div class="badge badge-accent">Typescript</div>
+                <div class="badge badge-ghost">Sqlite</div>
+                <div class="badge badge-neutral">llm</div>
+                <div class="badge badge-primary">tantivy</div>
+              </div>
+              <p>Backend + API + Frontend for running large language models of artificial intelligence on the local computer, with the addition of short-term memory, long-term memory, ai learning by chatting with the user and the ability to add your own custom data</p>
+              <div class="card-actions justify-end">
+                <a href="https://github.com/Hukasx0/ai-companion" target="_blank"><button class="btn btn-primary">GitHub</button></a>
+              </div>
+            </div>
+          </div>
         <div class="card lg:card-side bg-base-100 shadow-xl">
   <figure><img src={roggerImage} alt="" loading="lazy"/></figure>
   <div class="card-body w-1/2">
