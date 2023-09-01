@@ -1,19 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
     <HeroComponent />
+    <BodyComponent />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HeroComponent from '@/components/HeroComponent.vue'; // @ is an alias to /src
+import HeroComponent from '@/components/home/HeroComponent.vue';
+import BodyComponent from '@/components/home/BodyComponent.vue';
 
 @Options({
   components: {
     HeroComponent,
+    BodyComponent
   },
 })
 export default class HomeView extends Vue {}
 </script>
+
+<style scoped>
+  .home {
+    width: 100%;
+    height: 100%;
+  }
+</style>

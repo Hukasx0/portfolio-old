@@ -12,6 +12,8 @@
 
         <h2>Home Middleman</h2>
         <h3>JavaScript, Bootstrap, Node.js, Python, LaTeX</h3>
+
+        <h3>And other smaller projects available on my GitHub, which are also made out of passion/curiosity for programming 😀</h3>
     </div>
 </template>
 
